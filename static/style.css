@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Trench";
     src: url(./trench100.ttf);
@@ -5,14 +11,106 @@
 body{
     color: white;
     background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 h1{
     font-family: "Trench", sans-serif ;
+    text-align: center;
+    font-size: 49px;
+    line-height: 100%;
+}
+h1 .masterclass{
+    color: #00a1ff;
+    font-size: 49px;
+}
+h1 .programacao{
+    font-size: 54px;
+}
+h1 .fullstack{
+    font-size: 73px;
 }
 
 .secao--hero{
     background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660d9e60b52c66db2e67e0b4_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1.webp);
     background-position: 50% 0;
     background-size: cover;
+}
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 0 0 25px #00a1ff, inset 0 0 9px 3px #00000040;
+    padding: 30px 40px;
+    max-width: 50%;
+    gap: 15px;
+    font-size: 19px;
+}
+
+.subtitulo,
+.data{
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style: none;
+}
+li{
+    display: flex;
+    align-items: flex-start;
+    gap: 7.5px;
+
+}
+li img{
+    margin-top: 2.5px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 7.5px 0px #00a1ff;
+    border-radius: 100px;
+    padding: 2px 30px;
+
+}
+
+button{
+    font-size: 24px;
+    background-color: #00a1ff;
+    color: inherit;
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: 3px solid #003655;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
+}
+button:hover{
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-width: 4px;
+}
+
+section{
+    padding: 60px 20px;
 }
