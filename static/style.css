@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+img {
+    max-width: 100%;
+    display: block;
 }
 
 @font-face {
@@ -18,21 +23,93 @@ body{
     font-size: 16px;
 }
 
+.secao{
+    padding: 70px 20px;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    
+}
+
+.container--coluna{
+    flex-direction: column;
+    gap:40px;
+    align-items: center;
+}
+.hexagono {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141213;
+    border-radius:7.5px;
+    clip-Path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.hexagono--externo{
+    width: 90px;
+    height: 78px;
+    
+}
+
+.hexagono img{
+    width: 50%;
+}
+
+
+
+button{
+    background-color: #00a1ff;
+    color: inherit;
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: 3px solid #003655;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
+}
+button:hover{
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-width: 4px;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 400    ;
+}
+
+h3, 
+button {
+    font-size: 23px;
+
+}
+
+.realce{
+    color: #00a1ff;
+}
+
+/* Hero */
+
 h1{
     font-family: "Trench", sans-serif ;
     text-align: center;
     font-size: 49px;
     line-height: 100%;
 }
-h1 .masterclass{
-    color: #00a1ff;
-    font-size: 49px;
-}
+
 h1 .programacao{
-    font-size: 54px;
+    font-size: 53px;
 }
 h1 .fullstack{
-    font-size: 73px;
+    font-size: 78px;
 }
 
 .secao--hero{
@@ -40,28 +117,23 @@ h1 .fullstack{
     background-position: 50% 0;
     background-size: cover;
 }
-.container{
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-    border-radius: 30px;
-    box-shadow: 0 0 25px #00a1ff, inset 0 0 9px 3px #00000040;
+    background-color: #050505;
+    box-shadow: 0 0 25px 5px #00a1ff;
     padding: 30px 40px;
+    border-radius: 25px;
     max-width: 50%;
-    gap: 15px;
-    font-size: 19px;
+    gap: 25px;
+    font-size: 18px;
 }
 
 .subtitulo,
-.data{
-    font-size: 18px;
+.data {
+    font-size: 23px;
 }
 
 ul{
@@ -86,31 +158,80 @@ li img{
     gap: 10px;
     box-shadow: 0 0 7.5px 0px #00a1ff;
     border-radius: 100px;
-    padding: 2px 30px;
+    padding: 5px 30px;
 
 }
 
-button{
-    font-size: 24px;
-    background-color: #00a1ff;
-    color: inherit;
-    padding: 10px 30px;
-    border-radius: 100px;
-    border: 3px solid #003655;
-    border-right-width: 5px;
-    border-bottom-width: 5px;
-    cursor: pointer;
-    font-weight: 700;
-    text-transform: uppercase;
- 
+.daniel{
+    max-width:500px;
 }
-button:hover{
-    border-right-width: 4px;
-    border-bottom-width: 4px;
-    border-left-width: 4px;
-    border-top-width: 4px;
+/* Disclaimer */
+
+.secao--disclaimer{
+    padding: 30px 20px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 50%);
 }
 
-section{
-    padding: 60px 20px;
+.diclaimer {
+    font-size: 15px;
+    color: #7c7f7f;
 }
+
+/* passo */
+.passos {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passo {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.passo__icone {
+    max-width: 53px;
+    background-color: #141213;
+    border-radius:7.5px;
+    padding: 12.5px;
+    box-shadow: 0 0 7.5px 0px #00a1ff,inset 0 0 3.5px 0px #005080;
+    border: 3px solid #262427;
+}
+
+.passo__cabecalho{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    min-width: 200px
+}
+.passo__barra{
+    min-width: 4px;
+    background-color: #333;
+    align-self: stretch;
+}
+
+/*  Aprender*/
+
+.secao--aprender{
+    background-color: #000618;
+}
+
+.temas{
+    align-self:stretch;
+    font-size: 18px;
+}
+
+.tema{
+
+    background-color: #050505;
+    border-radius: 10px;
+    padding:25px 60px;
+    box-shadow: 0 0 7.5px 0px #00a1ff;
+
+}
+
