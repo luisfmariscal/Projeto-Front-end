@@ -366,8 +366,14 @@ li img{
     background-color: #1e1e1e;
     padding: 25px;
     border-radius: 25px;
+    max-width: 100%;
+    margin: 0 40px;
 
 }
+.popup__botao{
+    max-width: 100%;
+}
+
 input{
     padding: 10px 15px;
     border-radius: 100px;
@@ -411,6 +417,12 @@ input{
         background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660db2a7aa53ee839f890d43_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1%20-%20Mobile.webp);
         padding-bottom: 0;
     }
+    .secao--disclaimer{
+        padding: 30px;
+    }
+    .disclamer{
+        text-align: center;
+    }
     .card{
         max-width: 500px;
         width: 100%;
@@ -448,4 +460,108 @@ input{
 .passo__barra{
     height: 2px;
     width: 100%;
+}
+.temas{
+    margin-left: 0;
+    gap: 50px;
+}
+.tema{
+    padding: 50px;
+}
+.hexagono--lateral{
+    left: 50%;
+    top: 0;
+}
+.daniel,.daniel-quem{
+    max-width: 300px;
+}
+}
+@media (max-width: 480px){
+    h1{
+        font-size: 35px;
+    }
+    
+    h1 .programacao{
+        font-size: 36px;
+    }
+    h1 .fullstack{
+        font-size: 53px;
+    }
+    .card{
+        padding: 25px;
+        padding-top: 55px;
+        gap: 15px;
+    }
+    .subtitulo, .data, .card{
+        font-size: 16px;
+    }
+    button{
+        font-size: 18px;
+    }
+    .daniel,.daniel-quem{
+        max-width: 275px;
+    }
+    .disclamer{
+        font-size: 13px;
+    }
+    
+    h2{
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .secao{
+        padding: 40px 20px;
+    }
+    .secao--hero{
+        padding-bottom: inherit;
+        padding-top: 70px;
+    }
+    .secao--quem{
+        padding-bottom: inherit;
+    }
+    .secao--disclaimer{
+        padding: 30px;
+    }
+    .container--coluna{
+        gap: 30px;
+    }
+    .passo{
+        gap: 20px;
+    }
+    .temas{
+        margin-top: 20px;
+    }
+    .tema{
+        padding: 40px 20px 20px;
+    }
+    .card__titulo{
+        font-size: 25px;
+    }
+    .footer{
+        padding: 5px;
+    }
+    .footer--container{
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer__links{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer__links p {
+        display: none;
+    }
+    .popup__container{
+        padding: 20px ;
+        margin: 0 30px;
+    }
+    .popup__botao{
+        padding: 10px 20px;
+    }
+    .popup__botao--fechar{
+        padding: 10px;
+        height: 50px;
+    }
 }
